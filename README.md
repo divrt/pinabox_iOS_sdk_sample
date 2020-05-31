@@ -32,7 +32,7 @@ The SDK works in tandem with the pinabox gateway. Since the developer may not ha
 ```swift
 var pinaConfig = PinaConfig()
 pinaConfig.simulationMode = true    // <== UNCOMMENT THIS LINE
-pinaConfig.gateType = .ENTRY //Incase of Exit gate make sure of the Enum to be .EXIT
+pinaConfig.gateType = .IN //Incase of Exit gate make sure of the Enum to be .EXIT
 ```
 1. Compile and run the sample app
 2. In the demo mode, the gate open buttons would turn green in ~2 seconds. Click the button to open the gate in simulation mode.
@@ -105,12 +105,16 @@ import DivrtPinabox
 6. When ready to open the gate, such as a button click event, initialize ``` PinaConfig ``` class object with appropriate configuration data and launch the SDK. the SDK will open in the form of a pop-up window 
 
 ```swift
-let pinaConfig = PinaConfig()
-pinaConfig.zoneID = 3
-pinaConfig.gateType = .ENTRY
-pinaConfig.infoText = "Welcome to ABC garage"
 
-PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig) 
+let pinaConfig = PinaConfig()
+
+pinaConfig.zoneId = "62276"
+pinaConfig.helpText = self.entryLaneInfoTextField.text ?? "Welcome to ABC garage"
+pinaConfig.simulationMode = false
+pinaConfig.inOrOut = .IN
+pinaConfig.divrtClientKey = "CONTACT_US_FOR_KEY" //Please contact us to get your key"
+
+PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
 ```
 For detailed information on all PinaConfig parameters, refer to XYZ section of DivrtPinabox-swift.h
 
@@ -118,9 +122,43 @@ For detailed information on all PinaConfig parameters, refer to XYZ section of D
 7. Implement callback methods "onSuccess" and "onFailure" methods to handle success/failure of gate open event.
 ```swift
 
+     //ON SUCCESS 
+     PinaSDK.shared.onSuccess = {(messageDescription, gateType) in
+
+          let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
+          
+          myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+              print("Cancel")
+          })
+          
+          self.present(myalert, animated: true)
+      }
+      
+      //ON FAILURE
+      PinaSDK.shared.onFailure = {(messageDescription, gateType) in
+       
+          let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
+          
+          myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+              print("Cancel")
+          })
+          
+          self.present(myalert, animated: true)
+      }
+
+
 ```
 
 NOTE: You need iPhone 7 or above devices to use the NFC feature 
+
+## License
+Copyright (C) DIVRT, Inc - All Rights Reserved
+
+Unauthorized copying of this file, via any medium is strictly prohibited.
+
+Proprietary and confidential
+
+Written by Anvesh Tokala <anvesh.t@divrt.co>, May 2020
 
 ## Author
 
