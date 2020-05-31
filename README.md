@@ -116,8 +116,6 @@ pinaConfig.divrtClientKey = "CONTACT_US_FOR_KEY" //Please contact us to get your
 
 PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
 ```
-For detailed information on all PinaConfig parameters, refer to XYZ section of DivrtPinabox-swift.h
-
 
 7. Implement callback methods "onSuccess" and "onFailure" methods to handle success/failure of gate open event.
 ```swift
