@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework
+${PODS_ROOT}/DivrtPinabox/DivrtPinabox.framework
+${PODS_ROOT}/EstimoteBluetoothScanning/EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework
+${PODS_ROOT}/EstimoteProximitySDK/EstimoteProximitySDK/EstimoteProximitySDK.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
