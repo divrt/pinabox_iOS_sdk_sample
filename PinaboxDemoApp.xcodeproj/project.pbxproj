@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33CA452A216B4C08192CECDA /* Pods_PinaboxDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC90C3BEB6BFCEB4651EF26 /* Pods_PinaboxDemoApp.framework */; };
+		56F37CA50E91D21CCBF483CF /* Pods_PinaboxDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F74175F532DB6AD9691FFC /* Pods_PinaboxDemoAppTests.framework */; };
+		D8470E8E2423ABF4008790DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470E8D2423ABF4008790DE /* AppDelegate.swift */; };
+		D8470E902423ABF4008790DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470E8F2423ABF4008790DE /* SceneDelegate.swift */; };
+		D8470E922423ABF4008790DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470E912423ABF4008790DE /* ViewController.swift */; };
+		D8470E952423ABF4008790DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8470E932423ABF4008790DE /* Main.storyboard */; };
+		D8470E972423ABF8008790DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8470E962423ABF8008790DE /* Assets.xcassets */; };
+		D8470E9A2423ABF8008790DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8470E982423ABF8008790DE /* LaunchScreen.storyboard */; };
+		D8470EA52423ABF8008790DE /* PinaboxDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470EA42423ABF8008790DE /* PinaboxDemoAppTests.swift */; };
+		D8470EB02424AD69008790DE /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8470EAF2424AD69008790DE /* CoreNFC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8470EA12423ABF8008790DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8470E822423ABF4008790DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8470E892423ABF4008790DE;
+			remoteInfo = PinaboxDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C04680C874E6CFBA2DB616B /* Pods-PinaboxDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F5877F07F4CD792FD7C0B89 /* Pods-PinaboxDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoAppTests/Pods-PinaboxDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CC90C3BEB6BFCEB4651EF26 /* Pods_PinaboxDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinaboxDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		949559E43E6D2E3C7C432063 /* Pods-PinaboxDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoAppTests/Pods-PinaboxDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7F74175F532DB6AD9691FFC /* Pods_PinaboxDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinaboxDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8470E8A2423ABF4008790DE /* PinaboxDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinaboxDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8470E8D2423ABF4008790DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8470E8F2423ABF4008790DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8470E912423ABF4008790DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8470E942423ABF4008790DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8470E962423ABF8008790DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8470E992423ABF8008790DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8470E9B2423ABF8008790DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8470EA02423ABF8008790DE /* PinaboxDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinaboxDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8470EA42423ABF8008790DE /* PinaboxDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinaboxDemoAppTests.swift; sourceTree = "<group>"; };
+		D8470EA62423ABF8008790DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8470EAF2424AD69008790DE /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		EE80B9962B60CFF639F3FE84 /* Pods-PinaboxDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoApp.release.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8470E872423ABF4008790DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8470EB02424AD69008790DE /* CoreNFC.framework in Frameworks */,
+				33CA452A216B4C08192CECDA /* Pods_PinaboxDemoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8470E9D2423ABF8008790DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F37CA50E91D21CCBF483CF /* Pods_PinaboxDemoAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A356FF8EC0F6DE0F319A2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8470EAF2424AD69008790DE /* CoreNFC.framework */,
+				8CC90C3BEB6BFCEB4651EF26 /* Pods_PinaboxDemoApp.framework */,
+				B7F74175F532DB6AD9691FFC /* Pods_PinaboxDemoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B7B323E6A1E5C199B811DF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C04680C874E6CFBA2DB616B /* Pods-PinaboxDemoApp.debug.xcconfig */,
+				EE80B9962B60CFF639F3FE84 /* Pods-PinaboxDemoApp.release.xcconfig */,
+				7F5877F07F4CD792FD7C0B89 /* Pods-PinaboxDemoAppTests.debug.xcconfig */,
+				949559E43E6D2E3C7C432063 /* Pods-PinaboxDemoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D8470E812423ABF4008790DE = {
+			isa = PBXGroup;
+			children = (
+				D8470E8C2423ABF4008790DE /* PinaboxDemoApp */,
+				D8470EA32423ABF8008790DE /* PinaboxDemoAppTests */,
+				D8470E8B2423ABF4008790DE /* Products */,
+				5B7B323E6A1E5C199B811DF8 /* Pods */,
+				1A356FF8EC0F6DE0F319A2DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8470E8B2423ABF4008790DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8470E8A2423ABF4008790DE /* PinaboxDemoApp.app */,
+				D8470EA02423ABF8008790DE /* PinaboxDemoAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8470E8C2423ABF4008790DE /* PinaboxDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				D8470E8D2423ABF4008790DE /* AppDelegate.swift */,
+				D8470E8F2423ABF4008790DE /* SceneDelegate.swift */,
+				D8470E912423ABF4008790DE /* ViewController.swift */,
+				D8470E932423ABF4008790DE /* Main.storyboard */,
+				D8470E962423ABF8008790DE /* Assets.xcassets */,
+				D8470E982423ABF8008790DE /* LaunchScreen.storyboard */,
+				D8470E9B2423ABF8008790DE /* Info.plist */,
+			);
+			path = PinaboxDemoApp;
+			sourceTree = "<group>";
+		};
+		D8470EA32423ABF8008790DE /* PinaboxDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8470EA42423ABF8008790DE /* PinaboxDemoAppTests.swift */,
+				D8470EA62423ABF8008790DE /* Info.plist */,
+			);
+			path = PinaboxDemoAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8470E892423ABF4008790DE /* PinaboxDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8470EA92423ABF8008790DE /* Build configuration list for PBXNativeTarget "PinaboxDemoApp" */;
+			buildPhases = (
+				2DA7A09C036AADA490D8D984 /* [CP] Check Pods Manifest.lock */,
+				D8470E862423ABF4008790DE /* Sources */,
+				D8470E872423ABF4008790DE /* Frameworks */,
+				D8470E882423ABF4008790DE /* Resources */,
+				CD3DA0D1AA4F9CE989B21459 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinaboxDemoApp;
+			productName = PinaboxDemoApp;
+			productReference = D8470E8A2423ABF4008790DE /* PinaboxDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8470E9F2423ABF8008790DE /* PinaboxDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8470EAC2423ABF8008790DE /* Build configuration list for PBXNativeTarget "PinaboxDemoAppTests" */;
+			buildPhases = (
+				CEEECEAFFA6AA465D219AFE5 /* [CP] Check Pods Manifest.lock */,
+				D8470E9C2423ABF8008790DE /* Sources */,
+				D8470E9D2423ABF8008790DE /* Frameworks */,
+				D8470E9E2423ABF8008790DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8470EA22423ABF8008790DE /* PBXTargetDependency */,
+			);
+			name = PinaboxDemoAppTests;
+			productName = PinaboxDemoAppTests;
+			productReference = D8470EA02423ABF8008790DE /* PinaboxDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8470E822423ABF4008790DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = DIVRT;
+				TargetAttributes = {
+					D8470E892423ABF4008790DE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					D8470E9F2423ABF8008790DE = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = D8470E892423ABF4008790DE;
+					};
+				};
+			};
+			buildConfigurationList = D8470E852423ABF4008790DE /* Build configuration list for PBXProject "PinaboxDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8470E812423ABF4008790DE;
+			productRefGroup = D8470E8B2423ABF4008790DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8470E892423ABF4008790DE /* PinaboxDemoApp */,
+				D8470E9F2423ABF8008790DE /* PinaboxDemoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8470E882423ABF4008790DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8470E9A2423ABF8008790DE /* LaunchScreen.storyboard in Resources */,
+				D8470E972423ABF8008790DE /* Assets.xcassets in Resources */,
+				D8470E952423ABF4008790DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8470E9E2423ABF8008790DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DA7A09C036AADA490D8D984 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinaboxDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3DA0D1AA4F9CE989B21459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEECEAFFA6AA465D219AFE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinaboxDemoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8470E862423ABF4008790DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8470E922423ABF4008790DE /* ViewController.swift in Sources */,
+				D8470E8E2423ABF4008790DE /* AppDelegate.swift in Sources */,
+				D8470E902423ABF4008790DE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8470E9C2423ABF8008790DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8470EA52423ABF8008790DE /* PinaboxDemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8470EA22423ABF8008790DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8470E892423ABF4008790DE /* PinaboxDemoApp */;
+			targetProxy = D8470EA12423ABF8008790DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8470E932423ABF4008790DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8470E942423ABF4008790DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8470E982423ABF8008790DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8470E992423ABF8008790DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8470EA72423ABF8008790DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8470EA82423ABF8008790DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8470EAA2423ABF8008790DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C04680C874E6CFBA2DB616B /* Pods-PinaboxDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PinaboxDemoApp/PinaboxDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YS2BUQ99P;
+				INFOPLIST_FILE = PinaboxDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.PinaboxDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8470EAB2423ABF8008790DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE80B9962B60CFF639F3FE84 /* Pods-PinaboxDemoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PinaboxDemoApp/PinaboxDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YS2BUQ99P;
+				INFOPLIST_FILE = PinaboxDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.PinaboxDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8470EAD2423ABF8008790DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5877F07F4CD792FD7C0B89 /* Pods-PinaboxDemoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YS2BUQ99P;
+				INFOPLIST_FILE = PinaboxDemoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.PinaboxDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinaboxDemoApp.app/PinaboxDemoApp";
+			};
+			name = Debug;
+		};
+		D8470EAE2423ABF8008790DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949559E43E6D2E3C7C432063 /* Pods-PinaboxDemoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YS2BUQ99P;
+				INFOPLIST_FILE = PinaboxDemoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.PinaboxDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinaboxDemoApp.app/PinaboxDemoApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8470E852423ABF4008790DE /* Build configuration list for PBXProject "PinaboxDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8470EA72423ABF8008790DE /* Debug */,
+				D8470EA82423ABF8008790DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8470EA92423ABF8008790DE /* Build configuration list for PBXNativeTarget "PinaboxDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8470EAA2423ABF8008790DE /* Debug */,
+				D8470EAB2423ABF8008790DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8470EAC2423ABF8008790DE /* Build configuration list for PBXNativeTarget "PinaboxDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8470EAD2423ABF8008790DE /* Debug */,
+				D8470EAE2423ABF8008790DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8470E822423ABF4008790DE /* Project object */;
+}
