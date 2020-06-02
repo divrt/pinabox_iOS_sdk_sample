@@ -3,7 +3,7 @@ PODS:
   - CocoaAsyncSocket (7.6.4)
   - CocoaMQTT (1.2.5):
     - CocoaAsyncSocket (~> 7.6.3)
-  - DivrtPinabox (0.0.10):
+  - DivrtPinabox (0.0.11):
     - Alamofire (~> 5.1.0)
     - CocoaMQTT
     - EstimoteProximitySDK
@@ -30,7 +30,7 @@ SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
-  DivrtPinabox: 7f1037e3c1180b6ec1c600b2dad6bcd89638e296
+  DivrtPinabox: bd542d0dc38dcea395ca769809101c9fdaff3d13
   EstimoteBluetoothScanning: aef117c8584951609403dc73cb07f6501911a365
   EstimoteProximitySDK: b0128f51c7487dbd3c073691cec246c8d733808c
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825

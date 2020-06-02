@@ -41,22 +41,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NFCReaderUsageDescription</key>
-    <string>ANVESHThis allows for tap and go entry and exit out of garage. </string>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>ANVESHThis allows for single click entry and exit out of garage. </string>
-    <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>ANVESHThis allows for single click entry and exit out of garage. </string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>ANVESHThis allows for single click entry and exit out of garage.</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>ANVESHThis allows for single click entry and exit out of garage.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>ANVESHThis allows for single click entry and exit out of garage.</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>This allows for tap and go entry and exit out of garage. </string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This allows for single click entry and exit out of garage. </string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This allows for single click entry and exit out of garage. </string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This allows for single click entry and exit out of garage. </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This allows for single click entry and exit out of garage. </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This allows for single click entry and exit out of garage. </string>
 </dict>
 </plist>
