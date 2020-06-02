@@ -21,7 +21,7 @@ In order to demonstrate the simplicity of integration and usage of the pinabox s
 
 1. Download the sample project repo [PinaboxDemoApp](https://github.com/divrt/pinabox_ios_sdk.git)
 1. Open terminal window and navigate to project folder
-1. Run `pod install` (Make sure of your pod repos is updated. Run the `pod update` command to update your pods)
+1. Run `pod install` (Please ensure your pod repos are up to date. If not, run the `pod update` command to update your pods)
 1. Open `PinaboxDemoApp.xcworkspace` and run the project on selected device or simulator
 
 #### Testing the SDK 
