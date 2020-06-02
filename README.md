@@ -32,6 +32,7 @@ The SDK works in tandem with the pinabox gateway. Since the developer may not ha
 ```swift
 var pinaConfig = PinaConfig()
 pinaConfig.simulationMode = true    // <== UNCOMMENT THIS LINE
+pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key. Contact support.divrt.co for key
 pinaConfig.inOrOut = .IN //Incase of Exit gate make sure of the Enum to be .EXIT
 ```
 1. Compile and run the sample app
