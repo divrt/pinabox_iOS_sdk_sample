@@ -25,14 +25,14 @@ In order to demonstrate the simplicity of integration and usage of the pinabox s
 1. Open `PinaboxDemoApp.xcworkspace` and run the project on selected device or simulator
 
 #### Testing the SDK 
-The SDK works in tandem with the pinabox gateway. Since the developer may not have the hardware handy, the SDK is built with a demo mode option. In order to activate the simulation mode, navigate to the viewcontroller.swift in the project just downloaded and uncomment the simulation mode as shown below.
+The SDK works in tandem with the pinabox gateway. Since the developer may not have the hardware handy, the SDK is built with a demo mode option. In order to activate the simulation mode, navigate to the viewcontroller.swift in the project just downloaded and uncomment the simulation mode as shown below. Also replace the DIVRT_KEY with the actual client key received from DIVRT. If you do not have one, contact support@divrt.co
 
 
 
 ```swift
 var pinaConfig = PinaConfig()
 pinaConfig.simulationMode = true    // <== UNCOMMENT THIS LINE
-pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key. Contact support@divrt.co for key
+pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key.
 pinaConfig.inOrOut = .IN //Incase of Exit gate make sure of the Enum to be .OUT
 ```
 1. Compile and run the sample app
