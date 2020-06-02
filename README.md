@@ -33,7 +33,7 @@ The SDK works in tandem with the pinabox gateway. Since the developer may not ha
 var pinaConfig = PinaConfig()
 pinaConfig.simulationMode = true    // <== UNCOMMENT THIS LINE
 pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key. Contact support@divrt.co for key
-pinaConfig.inOrOut = .IN //Incase of Exit gate make sure of the Enum to be .EXIT
+pinaConfig.inOrOut = .IN //Incase of Exit gate make sure of the Enum to be .OUT
 ```
 1. Compile and run the sample app
 2. In the demo mode, the gate open buttons would turn green in ~2 seconds. Click the button to open the gate in simulation mode.
