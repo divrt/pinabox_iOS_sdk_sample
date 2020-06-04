@@ -62,7 +62,7 @@ pod 'DivrtPinabox'
 pod install 
 ```
 NOTE: 
-* Please ensure that the latest version of sdk is installed (**0.0.10**).
+* Please ensure that the latest version of sdk is installed (**0.0.13**).
 * Make sure of your pod repos is updated. Run the `pod update` command to update your pods 
 
 
@@ -112,11 +112,11 @@ import DivrtPinabox
 
 let pinaConfig = PinaConfig()
 
-pinaConfig.zoneId = "62276"
+pinaConfig.zoneId = "12345"
 pinaConfig.helpText = "Welcome to ABC garage"
 pinaConfig.simulationMode = false
 pinaConfig.inOrOut = .IN
-pinaConfig.divrtClientKey = "CONTACT_US_FOR_KEY" //Please contact us to get your key"
+pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key.
 
 PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
 ```
