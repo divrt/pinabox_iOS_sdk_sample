@@ -62,7 +62,7 @@ pod 'DivrtPinabox'
 pod install 
 ```
 NOTE: 
-* Please ensure that the latest version of sdk is installed (**0.0.13**).
+* Please ensure that the latest version of sdk is installed (**0.0.22**).
 * Make sure of your pod repos is updated. Run the `pod update` command to update your pods 
 
 
