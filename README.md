@@ -109,16 +109,13 @@ import DivrtPinabox
 6. When ready to open the gate, such as a button click event, initialize ``` PinaConfig ``` class object with appropriate configuration data and launch the SDK. the SDK will open in the form of a pop-up window 
 
 ```swift
+//IN APPDELEGATE
  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         PinaSDK.shared.initializeSDK(.Sandbox)
         return true
     }
-```swift
 
-
-
-```swift
 //IN VIEWCONTROLLER
 override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
