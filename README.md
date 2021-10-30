@@ -62,7 +62,7 @@ pod 'DivrtPinabox'
 pod install 
 ```
 NOTE: 
-* Please ensure that the latest version of sdk is installed (**0.0.22**).
+* Please ensure that the latest version of sdk is installed (**9.0.1**).
 * Make sure of your pod repos is updated. Run the `pod update` command to update your pods 
 
 
@@ -109,43 +109,71 @@ import DivrtPinabox
 6. When ready to open the gate, such as a button click event, initialize ``` PinaConfig ``` class object with appropriate configuration data and launch the SDK. the SDK will open in the form of a pop-up window 
 
 ```swift
+ func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        PinaSDK.shared.initializeSDK(.Sandbox)
+        return true
+    }
+```swift
 
-let pinaConfig = PinaConfig()
 
-pinaConfig.zoneId = "12345"
-pinaConfig.helpText = "Welcome to ABC garage"
-pinaConfig.simulationMode = false
-pinaConfig.inOrOut = .IN
-pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key.
 
-PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
+```swift
+//IN VIEWCONTROLLER
+override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let pinaConfig = getThePinaConfigParams()
+        PinaSDK.shared.configureSDK(viewController:self, pinaConfig: pinaConfig)      
+}
+
+func getThePinaConfigParams() -> PinaConfig {
+     let pinaConfig = PinaConfig()
+     
+     pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
+            
+     pinaConfig.pinaConfigParams = ["ostype": "IOS",
+                                    "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
+                                    "zid": "12345",
+                                    "gateType": "IN",
+                                    "simulationMode":false]
+                                       
+     return pinaConfig
+}
+
+//DISPLAY THE VIEW ON BUTTON CLICK
+@IBAction func buttonTapped(_ sender: Any) {
+    let pinaConfig = getThePinaConfigParams()
+    PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
+ }
 ```
 
 7. Implement callback methods "onSuccess" and "onFailure" methods to handle success/failure of gate open event.
 ```swift
 
      //ON SUCCESS 
-     PinaSDK.shared.onSuccess = {(messageDescription, gateType) in
-
-          let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
-          
-          myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
-              print("Cancel")
-          })
-          
-          self.present(myalert, animated: true)
+     PinaSDK.shared.onSuccess = {(data) in
+        //ADD YOUR BUSINESS LOGIC HERE ON SUCCESSFULLY GATE OPENING
+          let messageDescription = data["message"] as? String ?? ""
+            let myalert = UIAlertController(title: "Error", message: messageDescription, preferredStyle: .alert)
+            
+            myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+                print("Cancel")
+            })
+            
+            self.present(myalert, animated: true)
       }
       
       //ON FAILURE
-      PinaSDK.shared.onFailure = {(messageDescription, gateType) in
+      PinaSDK.shared.onFailure = {(data) in
        
-          let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
-          
-          myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
-              print("Cancel")
-          })
-          
-          self.present(myalert, animated: true)
+          let messageDescription = data["message"] as? String ?? ""
+            let myalert = UIAlertController(title: "Error", message: messageDescription, preferredStyle: .alert)
+            
+            myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+                print("Cancel")
+            })
+            
+            self.present(myalert, animated: true)
       }
 
 
