@@ -30,10 +30,19 @@ The SDK works in tandem with the pinabox gateway. Since the developer may not ha
 
 
 ```swift
-var pinaConfig = PinaConfig()
-pinaConfig.simulationMode = true    // <== UNCOMMENT THIS LINE
-pinaConfig.divrtClientKey = "DIVRT_KEY" // <== Replace with DIVRT client key.
-pinaConfig.inOrOut = .IN //Incase of Exit gate make sure of the Enum to be .OUT
+func getThePinaConfigParams() -> PinaConfig {
+     let pinaConfig = PinaConfig()
+     
+     pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
+            
+     pinaConfig.pinaConfigParams = ["ostype": "IOS",
+                                    "simulationMode": true,    // <== UNCOMMENT THIS LINE
+                                    "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
+                                    "zid": "12345",
+                                    "gateType": "IN"]
+                                       
+     return pinaConfig
+}
 ```
 1. Compile and run the sample app
 2. In the demo mode, the gate open buttons would turn green in ~2 seconds. Click the button to open the gate in simulation mode.
@@ -129,10 +138,10 @@ func getThePinaConfigParams() -> PinaConfig {
      pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
             
      pinaConfig.pinaConfigParams = ["ostype": "IOS",
+                                    "simulationMode": false,
                                     "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
                                     "zid": "12345",
-                                    "gateType": "IN",
-                                    "simulationMode":false]
+                                    "gateType": "IN"]
                                        
      return pinaConfig
 }
