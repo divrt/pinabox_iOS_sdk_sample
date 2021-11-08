@@ -30,7 +30,7 @@ The SDK works in tandem with the pinabox gateway. Since the developer may not ha
 
 
 ```swift
-func getThePinaConfigParams(gateType: String) -> PinaConfig
+func getThePinaConfigParams(gateType: String) -> PinaConfig {
      let pinaConfig = PinaConfig()
      
      pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
@@ -148,7 +148,7 @@ func getThePinaConfigParams(gateType: String) -> PinaConfig {
 
 //DISPLAY THE VIEW ON BUTTON CLICK
 @IBAction func buttonTapped(_ sender: Any) {
-    let pinaConfig = getThePinaConfigParams(gateType: "IN")
+    let pinaConfig = getThePinaConfigParams(gateType: "IN") //the gateType can be either "IN" or "OUT"
     PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
  }
 ```
