@@ -30,7 +30,7 @@ The SDK works in tandem with the pinabox gateway. Since the developer may not ha
 
 
 ```swift
-func getThePinaConfigParams() -> PinaConfig {
+func getThePinaConfigParams(gateType: String) -> PinaConfig
      let pinaConfig = PinaConfig()
      
      pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
@@ -132,7 +132,7 @@ override func viewWillAppear(_ animated: Bool) {
         PinaSDK.shared.configureSDK(viewController:self, pinaConfig: pinaConfig)      
 }
 
-func getThePinaConfigParams() -> PinaConfig {
+func getThePinaConfigParams(gateType: String) -> PinaConfig {
      let pinaConfig = PinaConfig()
      
      pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
@@ -141,14 +141,14 @@ func getThePinaConfigParams() -> PinaConfig {
                                     "simulationMode": false,
                                     "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
                                     "zid": "12345",
-                                    "gateType": "IN"]
+                                    "gateType": gateType]
                                        
      return pinaConfig
 }
 
 //DISPLAY THE VIEW ON BUTTON CLICK
 @IBAction func buttonTapped(_ sender: Any) {
-    let pinaConfig = getThePinaConfigParams()
+    let pinaConfig = getThePinaConfigParams(gateType: "IN")
     PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
  }
 ```
