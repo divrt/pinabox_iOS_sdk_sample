@@ -39,6 +39,7 @@ func getThePinaConfigParams(gateType: String) -> PinaConfig {
                                     "simulationMode": true,    // <== UNCOMMENT THIS LINE
                                     "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
                                     "zid": "12345",
+                                    "uniqueID": "pinaboxdemo@divrt.co",
                                     "gateType": gateType]
                                        
      return pinaConfig
@@ -66,7 +67,17 @@ func getThePinaConfigParams(gateType: String) -> PinaConfig {
 ```ruby 
 pod 'DivrtPinabox' 
 ```
-3. On terminal, navigate to your project folder and run the command below  
+3. Add the following lines into your podfile
+```ruby
+post_install do |installer|
+   installer.pods_project.targets.each do |target|
+     target.build_configurations.each do |config|
+         config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+     end
+   end
+end
+```
+4. On terminal, navigate to your project folder and run the command below  
 ``` java
 pod install 
 ```
@@ -141,6 +152,7 @@ func getThePinaConfigParams(gateType: String) -> PinaConfig {
                                     "simulationMode": false,
                                     "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
                                     "zid": "12345",
+                                    "uniqueID": "pinaboxdemo@divrt.co",
                                     "gateType": gateType]
                                        
      return pinaConfig
