@@ -39,7 +39,7 @@ func getThePinaConfigParams(gateType: String) -> PinaConfig {
                                     "simulationMode": true,    // <== UNCOMMENT THIS LINE
                                     "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
                                     "zid": "12345",
-                                    "gateType": "IN"]
+                                    "gateType": gateType]
                                        
      return pinaConfig
 }
