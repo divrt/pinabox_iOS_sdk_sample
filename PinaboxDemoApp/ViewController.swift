@@ -46,42 +46,38 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        PinaSDK.shared.onSuccess = {(messageDescription, gateType) in
-            var message = ""
-            switch gateType {
-            case .IN:
-                    message = "Checked In successfully. Please enter the garage"
-                 
-                case .OUT:
-                 
-                    message = "Checked out successfully. Please exit the garage"
-                
-            default:
-                message = "Something went wrong"
-            }
-         
-            let myalert = UIAlertController(title: "Info", message: message, preferredStyle: .alert)
-            
-            myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
-                print("Cancel")
-            })
-            
-            self.present(myalert, animated: true)
-        }
-        
-        PinaSDK.shared.onFailure = {(messageDescription, gateType) in
-         
-            let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
-            
-            myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
-                print("Cancel")
-            })
-            
-            self.present(myalert, animated: true)
-        }
+        //ON SUCCESS
+            PinaSDK.shared.onSuccess = {(data) in
+               //ADD YOUR BUSINESS LOGIC HERE ON SUCCESSFULLY GATE OPENING
+                 let messageDescription = data["message"] as? String ?? ""
+                   let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
+                   
+                   myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+                       print("Cancel")
+                   })
+                   
+                   self.present(myalert, animated: true)
+             }
+             
+             //ON FAILURE
+             PinaSDK.shared.onFailure = {(data) in
+              
+                 let messageDescription = data["message"] as? String ?? ""
+                   let myalert = UIAlertController(title: "Info", message: messageDescription, preferredStyle: .alert)
+                   
+                   myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+                       print("Cancel")
+                   })
+                   
+                   self.present(myalert, animated: true)
+             }
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            let pinaConfig = getThePinaConfigParams(gateType: "IN") //Change the gateType based on the entry and exit
+            PinaSDK.shared.configureSDK(viewController:self, pinaConfig: pinaConfig)
+    }
    
     
     @objc func keyboardNotification(notification: NSNotification) {
@@ -107,27 +103,29 @@ class ViewController: UIViewController {
     
     @IBAction func entryButton(_ sender: Any) {
         
-      
-        var pinaConfig = PinaConfig()
-        pinaConfig.zoneId = "12345"
-        pinaConfig.helpText = self.entryLaneInfoTextField.text ?? "Welcome to ABC garage"
-        pinaConfig.simulationMode = true
-        pinaConfig.inOrOut = .IN
-        pinaConfig.divrtClientKey = "CONTACT_US_FOR_KEY" //Please contact us to get your key"
+        let pinaConfig = getThePinaConfigParams(gateType: "IN")
         PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
     }
     
     @IBAction func exitButton(_ sender: Any) {
         
-      
-        
-        var pinaConfig = PinaConfig()
-        pinaConfig.zoneId = "12345"
-        pinaConfig.helpText = self.exitLaneInfoTextField.text ?? "Welcome to ABC garage"
-        pinaConfig.simulationMode = true
-        pinaConfig.inOrOut = .OUT
-        pinaConfig.divrtClientKey = "CONTACT_US_FOR_KEY" //Please contact us to get your key"
+        let pinaConfig = getThePinaConfigParams(gateType: "OUT")
         PinaSDK.shared.pinaInterface(viewController:self, pinaConfig: pinaConfig)
+    }
+    
+    func getThePinaConfigParams(gateType: String) -> PinaConfig {
+         let pinaConfig = PinaConfig()
+         
+         pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
+                
+         pinaConfig.pinaConfigParams = ["ostype": "IOS",
+                                        "simulationMode": true,
+                                        "secret_key": "e8f364d7f44a2d380c2bea36c4433614debef99115cd4cfef321bab03239312f", // <== Replace with DIVRT client key.
+                                        "zid": "12345",
+                                        "uniqueID": "pinaboxdemo@divrt.co",
+                                        "gateType": gateType]
+                                           
+         return pinaConfig
     }
    
 }

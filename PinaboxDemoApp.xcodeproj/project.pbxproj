@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4ACA086AF5E5D9FC398C2C62 /* Pods_PinaboxDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52367EE2F82925C4BA9730CF /* Pods_PinaboxDemoAppTests.framework */; };
+		2F5DDE534C13F682D1F586E5 /* Pods_PinaboxDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11764F3A0502415F58B95F7D /* Pods_PinaboxDemoAppTests.framework */; };
 		D8470E8E2423ABF4008790DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470E8D2423ABF4008790DE /* AppDelegate.swift */; };
 		D8470E902423ABF4008790DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470E8F2423ABF4008790DE /* SceneDelegate.swift */; };
 		D8470E922423ABF4008790DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470E912423ABF4008790DE /* ViewController.swift */; };
@@ -16,7 +16,7 @@
 		D8470E9A2423ABF8008790DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8470E982423ABF8008790DE /* LaunchScreen.storyboard */; };
 		D8470EA52423ABF8008790DE /* PinaboxDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8470EA42423ABF8008790DE /* PinaboxDemoAppTests.swift */; };
 		D8470EB02424AD69008790DE /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8470EAF2424AD69008790DE /* CoreNFC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E05408A0D745C5C436F0E95F /* Pods_PinaboxDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962A45B43C53886E2E757604 /* Pods_PinaboxDemoApp.framework */; };
+		E9749E60111FF4C6B447F7A3 /* Pods_PinaboxDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E0FC7A37BCD3B567F699DA /* Pods_PinaboxDemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		356CFAAC2C9F83BF4FDAD876 /* Pods-PinaboxDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoAppTests/Pods-PinaboxDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		486F55B093036FF85EE966E2 /* Pods-PinaboxDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoAppTests/Pods-PinaboxDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		52367EE2F82925C4BA9730CF /* Pods_PinaboxDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinaboxDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		962A45B43C53886E2E757604 /* Pods_PinaboxDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinaboxDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A09C03A1FD45D4DD5B02A781 /* Pods-PinaboxDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
-		D4CD58588AD2666B40BF52C2 /* Pods-PinaboxDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoApp.release.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		11764F3A0502415F58B95F7D /* Pods_PinaboxDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinaboxDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF0D0B3DC1B70DBD387DCEF /* Pods-PinaboxDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB8E0657D41774CDA28267E /* Pods-PinaboxDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoAppTests/Pods-PinaboxDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		967B3C12478116ABB6CE27BC /* Pods-PinaboxDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoAppTests/Pods-PinaboxDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98E0FC7A37BCD3B567F699DA /* Pods_PinaboxDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinaboxDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A7EE5D724B4D83DBCF6D59 /* Pods-PinaboxDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinaboxDemoApp.release.xcconfig"; path = "Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		D8470E8A2423ABF4008790DE /* PinaboxDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinaboxDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8470E8D2423ABF4008790DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8470E8F2423ABF4008790DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8470EB02424AD69008790DE /* CoreNFC.framework in Frameworks */,
-				E05408A0D745C5C436F0E95F /* Pods_PinaboxDemoApp.framework in Frameworks */,
+				E9749E60111FF4C6B447F7A3 /* Pods_PinaboxDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ACA086AF5E5D9FC398C2C62 /* Pods_PinaboxDemoAppTests.framework in Frameworks */,
+				2F5DDE534C13F682D1F586E5 /* Pods_PinaboxDemoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				D8470EAF2424AD69008790DE /* CoreNFC.framework */,
-				962A45B43C53886E2E757604 /* Pods_PinaboxDemoApp.framework */,
-				52367EE2F82925C4BA9730CF /* Pods_PinaboxDemoAppTests.framework */,
+				98E0FC7A37BCD3B567F699DA /* Pods_PinaboxDemoApp.framework */,
+				11764F3A0502415F58B95F7D /* Pods_PinaboxDemoAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,10 +84,10 @@
 		5B7B323E6A1E5C199B811DF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A09C03A1FD45D4DD5B02A781 /* Pods-PinaboxDemoApp.debug.xcconfig */,
-				D4CD58588AD2666B40BF52C2 /* Pods-PinaboxDemoApp.release.xcconfig */,
-				356CFAAC2C9F83BF4FDAD876 /* Pods-PinaboxDemoAppTests.debug.xcconfig */,
-				486F55B093036FF85EE966E2 /* Pods-PinaboxDemoAppTests.release.xcconfig */,
+				3CF0D0B3DC1B70DBD387DCEF /* Pods-PinaboxDemoApp.debug.xcconfig */,
+				C9A7EE5D724B4D83DBCF6D59 /* Pods-PinaboxDemoApp.release.xcconfig */,
+				967B3C12478116ABB6CE27BC /* Pods-PinaboxDemoAppTests.debug.xcconfig */,
+				5BB8E0657D41774CDA28267E /* Pods-PinaboxDemoAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -142,11 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8470EA92423ABF8008790DE /* Build configuration list for PBXNativeTarget "PinaboxDemoApp" */;
 			buildPhases = (
-				4C95B7A6EB3638270FDC6673 /* [CP] Check Pods Manifest.lock */,
+				BC9F42F8ED28ADEBA828D311 /* [CP] Check Pods Manifest.lock */,
 				D8470E862423ABF4008790DE /* Sources */,
 				D8470E872423ABF4008790DE /* Frameworks */,
 				D8470E882423ABF4008790DE /* Resources */,
-				9A2B494CA85F2D35744E4DDA /* [CP] Embed Pods Frameworks */,
+				8532D52170D149511157D123 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8470EAC2423ABF8008790DE /* Build configuration list for PBXNativeTarget "PinaboxDemoAppTests" */;
 			buildPhases = (
-				6719500C65512FD9AA78E595 /* [CP] Check Pods Manifest.lock */,
+				2A38BA722CBA740A91D18927 /* [CP] Check Pods Manifest.lock */,
 				D8470E9C2423ABF8008790DE /* Sources */,
 				D8470E9D2423ABF8008790DE /* Frameworks */,
 				D8470E9E2423ABF8008790DE /* Resources */,
@@ -235,29 +235,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C95B7A6EB3638270FDC6673 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PinaboxDemoApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6719500C65512FD9AA78E595 /* [CP] Check Pods Manifest.lock */ = {
+		2A38BA722CBA740A91D18927 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,7 +257,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A2B494CA85F2D35744E4DDA /* [CP] Embed Pods Frameworks */ = {
+		8532D52170D149511157D123 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,6 +272,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinaboxDemoApp/Pods-PinaboxDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9F42F8ED28ADEBA828D311 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinaboxDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -463,7 +463,7 @@
 		};
 		D8470EAA2423ABF8008790DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A09C03A1FD45D4DD5B02A781 /* Pods-PinaboxDemoApp.debug.xcconfig */;
+			baseConfigurationReference = 3CF0D0B3DC1B70DBD387DCEF /* Pods-PinaboxDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PinaboxDemoApp/PinaboxDemoApp.entitlements;
@@ -476,7 +476,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.PinaboxDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.pinaboxdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -486,7 +486,7 @@
 		};
 		D8470EAB2423ABF8008790DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4CD58588AD2666B40BF52C2 /* Pods-PinaboxDemoApp.release.xcconfig */;
+			baseConfigurationReference = C9A7EE5D724B4D83DBCF6D59 /* Pods-PinaboxDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PinaboxDemoApp/PinaboxDemoApp.entitlements;
@@ -499,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.PinaboxDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divrt.pinaboxdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -509,7 +509,7 @@
 		};
 		D8470EAD2423ABF8008790DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 356CFAAC2C9F83BF4FDAD876 /* Pods-PinaboxDemoAppTests.debug.xcconfig */;
+			baseConfigurationReference = 967B3C12478116ABB6CE27BC /* Pods-PinaboxDemoAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,7 +532,7 @@
 		};
 		D8470EAE2423ABF8008790DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 486F55B093036FF85EE966E2 /* Pods-PinaboxDemoAppTests.release.xcconfig */;
+			baseConfigurationReference = 5BB8E0657D41774CDA28267E /* Pods-PinaboxDemoAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
