@@ -82,7 +82,7 @@ end
 pod install 
 ```
 NOTE: 
-* Please ensure that the latest version of sdk is installed (**9.0.1**).
+* Please ensure that the latest version of sdk is installed (**15.0.2**).
 * Make sure of your pod repos is updated. Run the `pod update` command to update your pods 
 
 
@@ -132,7 +132,7 @@ import DivrtPinabox
 //IN APPDELEGATE
  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        PinaSDK.shared.initializeSDK(.Sandbox)
+        PinaSDK.shared.pinaInitialiser(.Sandbox)
         return true
     }
 
@@ -140,7 +140,7 @@ import DivrtPinabox
 override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let pinaConfig = getThePinaConfigParams()
-        PinaSDK.shared.configureSDK(viewController:self, pinaConfig: pinaConfig)      
+        PinaSDK.shared.pinaGateHandler(viewController:self, pinaConfig: pinaConfig)      
 }
 
 func getThePinaConfigParams(gateType: String) -> PinaConfig {
