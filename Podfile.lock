@@ -1,8 +1,10 @@
 PODS:
   - CocoaAsyncSocket (7.6.5)
-  - CocoaMQTT (1.2.5):
-    - CocoaAsyncSocket (~> 7.6.3)
-  - DivrtPinabox (10.0.1):
+  - CocoaMQTT (2.0.2):
+    - CocoaMQTT/Core (= 2.0.2)
+  - CocoaMQTT/Core (2.0.2):
+    - CocoaAsyncSocket (~> 7.6.5)
+  - DivrtPinabox (15.0.2):
     - CocoaMQTT
     - EstimoteProximitySDK
     - SSZipArchive
@@ -25,12 +27,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
-  DivrtPinabox: affcd94786df0f61b5c7e78bef3b6a8bb35484f5
+  CocoaMQTT: 2cab338fe04820d1e32aa20809e4d141a4118f0a
+  DivrtPinabox: fa7964c1021a4eed41d7b030f7396b8da72d2687
   EstimoteBluetoothScanning: aef117c8584951609403dc73cb07f6501911a365
   EstimoteProximitySDK: b0128f51c7487dbd3c073691cec246c8d733808c
   SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
 
 PODFILE CHECKSUM: 77d16623f1031616d7505f064916d76bdebdc4c7
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

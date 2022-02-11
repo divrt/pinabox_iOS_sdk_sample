@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        PinaSDK.shared.initializeSDK(.Sandbox)
+        PinaSDK.shared.pinaInitialiser(.Sandbox)
         return true
     }
 

@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             let pinaConfig = getThePinaConfigParams(gateType: "IN") //Change the gateType based on the entry and exit
-            PinaSDK.shared.configureSDK(viewController:self, pinaConfig: pinaConfig)
+            PinaSDK.shared.pinaGateHandler(viewController:self, pinaConfig: pinaConfig)
     }
    
     
@@ -116,7 +116,8 @@ class ViewController: UIViewController {
     func getThePinaConfigParams(gateType: String) -> PinaConfig {
          let pinaConfig = PinaConfig()
          
-         pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
+         pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage",
+                                     "moveForwardText":"Move closer to the gate to entry"]
                 
          pinaConfig.pinaConfigParams = ["ostype": "IOS",
                                         "simulationMode": true,
