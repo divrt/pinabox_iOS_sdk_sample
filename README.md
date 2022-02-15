@@ -193,8 +193,62 @@ func getThePinaConfigParams(gateType: String) -> PinaConfig {
             
             self.present(myalert, animated: true)
       }
+```
 
+8. The SDK also support **Validations** feature, by which user can avail concession on their parking amount, In order to avail, Use a button click event, initialize ``` PinaConfig ``` class object with appropriate configuration data and launch the SDK to show Validation popup.
 
+```swift
+
+func getThePinaConfigParams(gateType: String) -> PinaConfig {
+     let pinaConfig = PinaConfig()
+     
+     pinaConfig.pinaSdkParams = ["helpText":"Welcome to ABC garage","moveForwardText":"Move closer to the gate to entry"]
+            
+     pinaConfig.pinaConfigParams = ["ostype": "IOS",
+                                    "simulationMode": false,
+                                    "secret_key": "DIVRT_KEY", // <== Replace with DIVRT client key.
+                                    "zid": "12345",
+                                    "uniqueID": "pinaboxdemo@divrt.co",
+                                    "gateType": gateType]
+                                       
+     return pinaConfig
+}
+
+//DISPLAY THE VIEW ON BUTTON CLICK
+@IBAction func buttonTapped(_ sender: Any) {
+    let pinaConfig = getThePinaConfigParams(gateType: "OUT") //the gateType should be "OUT"
+    PinaSDK.shared.pinaInterfaceValidation(viewController: self, pinaConfig: pinaConfig)
+ }
+```
+
+9. Implement callback methods "onValidationSuccess" and "onValidationFailure" methods to handle success/failure of coupon validation for a parking session.
+```swift
+
+     //ON SUCCESS 
+     PinaSDK.shared.onValidationSuccess = {(data) in
+        //ADD YOUR BUSINESS LOGIC HERE ON SUCCESSFULLY GATE OPENING
+          let messageDescription = data["message"] as? String ?? ""
+            let myalert = UIAlertController(title: "Error", message: messageDescription, preferredStyle: .alert)
+            
+            myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+                print("Cancel")
+            })
+            
+            self.present(myalert, animated: true)
+      }
+      
+      //ON FAILURE
+      PinaSDK.shared.onValidationFailure = {(data) in
+       
+          let messageDescription = data["message"] as? String ?? ""
+            let myalert = UIAlertController(title: "Error", message: messageDescription, preferredStyle: .alert)
+            
+            myalert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+                print("Cancel")
+            })
+            
+            self.present(myalert, animated: true)
+      }
 ```
 
 NOTE: You need iPhone 7 or above devices to use the NFC feature 
