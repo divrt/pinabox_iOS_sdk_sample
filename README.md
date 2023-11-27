@@ -263,9 +263,9 @@ Unauthorized copying of this file, via any medium is strictly prohibited.
 
 Proprietary and confidential
 
-Written by Anvesh Tokala <anvesh.t@divrt.co>, May 2020
+Written by Anvesh Tokala <atokala@spplus.com>, May 2020
 
 ## Author
 
-anvesh.t@divrt.co
+atokala@spplus.com
  
